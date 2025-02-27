@@ -52,7 +52,8 @@ void Dame::seFaitLiberer(Cowboy& cowboy)
 	etat = "libre";
 }
 
-void Dame::changeDeRobe(string _couleurRobe)
+void Dame::changeDeRobe(string couleurRobe)
 {
-	couleurRobe = _couleurRobe;
+	this->couleurRobe = couleurRobe;
+	cout << "(" << nom << ") -- Regardez ma nouvelle robe " << couleurRobe << " ! " << endl;
 }
