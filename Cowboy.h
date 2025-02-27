@@ -1,7 +1,5 @@
 #pragma once
 #include "Humain.h"
-#include "Brigand.h"
-#include "Dame.h"
 using namespace std;
 class Dame;
 class Brigand;

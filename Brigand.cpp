@@ -1,8 +1,10 @@
 #include "Brigand.h"
+#include "Dame.h"
+#include "Cowboy.h"
 #include <iostream>
 using namespace std;
 
-Brigand::Brigand(const string nom, const string boissonFavorite, const string comprotement)
+Brigand::Brigand(const string nom, const string boissonFavorite, const string comportement) : Humain(nom, boissonFavorite), comportement(comportement), nbDamesEnlever(0), recompense(0), enPrison(false)
 {
 }
 

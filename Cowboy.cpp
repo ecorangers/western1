@@ -1,10 +1,11 @@
 #include "Cowboy.h"
+#include "Brigand.h"
+#include "Dame.h"
 #include <iostream>
-#include "Brigand.cpp"
 
-Cowboy::Cowboy(const string nom, const string boissonFavorite, const string qualite)
+
+Cowboy::Cowboy(const string nom, const string boissonFavorite, const string qualite): Humain(nom, boissonFavorite), qualite(qualite)
 {
-
 }
 
 int Cowboy::getPopularite()
@@ -44,7 +45,7 @@ void Cowboy::decrementePopularite()
 
 void Cowboy::tire(const Brigand& brigand)
 {
-	cout << "** Le " << getQualite << " " << nom << " tire " << endl;
+	cout << "** Le " << getQualite() << " " << nom << " tire " << endl;
 	cout << "(" << nom << ") -- Prends ca rascal ! " << endl;
 }
 

@@ -1,10 +1,8 @@
 #pragma once
 #include "Humain.h"
-#include "Dame.h"
-#include "Cowboy.h"
 using namespace std;
 class Dame;
-class cowboy;
+class Cowboy;
 class Brigand :
 	public Humain
 {
@@ -16,7 +14,7 @@ private:
 
 public:
 	//Constructeur et Destructeur
-	Brigand(const string nom = "", const string boissonFavorite = "tord-boyaux", const string comprotement = "mechant");
+	Brigand(const string nom = "", const string boissonFavorite = "tord-boyaux", const string comportement = "mechant");
 	//Accesseurs
 	string getComportement();
 	int getNbDamesEnlever();
@@ -24,7 +22,7 @@ public:
 	//Service
 	void sePresente();
 	void kidnappe(Dame & dame);
-	void seFaitEmprisonner(Cowboy& cowboy);
+	void seFaitEmprisonner(Cowboy &cowboy);
 	void augmenteRecompense(const int prix = 100);
 	void diminueRecompense(const int prix = 100);
 	bool estEnPrison();

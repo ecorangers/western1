@@ -1,6 +1,5 @@
 #pragma once
 #include "Humain.h"
-#include "Cowboy.h"
 using namespace std;
 class Cowboy;
 class Dame :

@@ -1,6 +1,8 @@
 #include "Dame.h"
+#include "Brigand.h"
+#include "Cowboy.h"
 #include <iostream>
-#include "Brigand.cpp"
+
 using namespace std;
 
 void Dame::hurle()
@@ -14,7 +16,7 @@ void Dame::remercie(Cowboy &cowboy)
 	cout << "(" << nom << ") -- Merci " << cowboy.getNom() << ", je suis enfin libre ! " << endl;
 }
 
-Dame::Dame(const string nom, const string boissonFavorite, const string couleurRobe)
+Dame::Dame(const string nom, const string boissonFavorite, const string couleurRobe): Humain(nom, boissonFavorite), couleurRobe(couleurRobe), etat("libre")
 {
 }
 

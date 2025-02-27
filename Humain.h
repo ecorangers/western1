@@ -10,5 +10,6 @@ protected:
 public:
 	string getNom();
 	string getBoissonFavorite();
+	Humain(string nom, string boissonFavorite);
 };
 
