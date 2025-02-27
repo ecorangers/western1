@@ -23,4 +23,5 @@ int main()
 	lucky.tire(joe);
 	lucky.emprisonne(joe);
 	lucky.libere(jenny);
+	//terminer//
 }
