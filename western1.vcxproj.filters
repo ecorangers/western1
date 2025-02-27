@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="western1.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="Humain.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
@@ -28,6 +25,9 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Cowboy.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="western.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

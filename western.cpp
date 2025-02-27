@@ -1,4 +1,4 @@
-// western1.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
+// western.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
 //
 #include "Cowboy.h"
 #include "Brigand.h"
