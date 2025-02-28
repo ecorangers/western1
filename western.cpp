@@ -15,7 +15,5 @@ int main()
 
 	lucky.sePresente();
 	jenny.sePresente();
-
-
 }
 
