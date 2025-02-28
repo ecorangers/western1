@@ -11,18 +11,18 @@ void Dame::hurle()
 	cout << "(" << nom << ") -- Au secours, je me fais kidnapper ! " << endl;
 }
 
-void Dame::remercie(Cowboy &cowboy)
+void Dame::remercie(Cowboy& cowboy)
 {
 	cout << "(" << nom << ") -- Merci " << cowboy.getNom() << ", je suis enfin libre ! " << endl;
 }
 
-Dame::Dame(const string nom, const string boissonFavorite, const string couleurRobe): Humain(nom, boissonFavorite), couleurRobe(couleurRobe), etat("libre")
+Dame::Dame(const string nom, const string boissonFavorite, const string couleurRobe) : Humain(nom, boissonFavorite), couleurRobe(couleurRobe), etat("libre")
 {
 }
 
 string Dame::getNom()
 {
-	return "Miss "+nom;
+	return "Miss " + nom;
 }
 
 string Dame::getEtat()
@@ -52,7 +52,8 @@ void Dame::seFaitLiberer(Cowboy& cowboy)
 	etat = "libre";
 }
 
-void Dame::changeDeRobe(string _couleurRobe)
+void Dame::changeDeRobe(string couleurRobe)
 {
-	couleurRobe = _couleurRobe;
+	this->couleurRobe = couleurRobe;
+	cout << "(" << nom << ") -- Regardez ma nouvelle robe " << couleurRobe << " ! " << endl;
 }

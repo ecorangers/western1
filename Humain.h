@@ -8,8 +8,16 @@ protected:
 	string boissonFavorite;
 
 public:
+	//Constructeur et Destructeur
+	Humain(const string nom = "", const string boissonFavorite = "eau");
+	//Accesseurs
 	string getNom();
 	string getBoissonFavorite();
-	Humain(string nom, string boissonFavorite);
+	//Service
+	void setBoissonFavorite(const string nouvelleBoissonFavorite);
+	void sePresente();
+	void parle(const string texte);
+	void boit();
+
 };
 

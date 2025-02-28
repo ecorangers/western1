@@ -1,26 +1,21 @@
-// western1.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
+// western.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.//
+
+#include "Humain.h"
 #include "Cowboy.h"
 #include "Brigand.h"
 #include "Dame.h"
 #include <iostream>
 using namespace std;
 
-
 int main()
 {
-	Cowboy lucky("Luky & Luke", "coca-cola");
-	Brigand joe("Joe");
+	Cowboy lucky("Luky & Luke");
 	Dame jenny("Jenny");
-
+	//La rencontre ...
 	lucky.sePresente();
 	jenny.sePresente();
-
-	joe.sePresente();
-	joe.kidnappe(jenny);
-
-	cout <<"("<< joe.getNom() << ") -- J'ai l'air " << joe.getComportement() <<" , j' ai deja enlever " << joe.getNbDamesEnlever() << " dames , et ma prime est de " << joe.getRecompense() << endl;
-	lucky.tire(joe);
-	lucky.emprisonne(joe);
-	lucky.libere(jenny);
+	//Allons boire un coup ...
+	jenny.changeDeRobe("verte");
+	lucky.boit();
+	jenny.boit();
 }

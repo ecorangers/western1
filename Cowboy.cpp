@@ -4,7 +4,7 @@
 #include <iostream>
 
 
-Cowboy::Cowboy(const string nom, const string boissonFavorite, const string qualite): Humain(nom, boissonFavorite), qualite(qualite)
+Cowboy::Cowboy(const string nom, const string boissonFavorite, const string qualite) : Humain(nom, boissonFavorite), qualite(qualite)
 {
 }
 

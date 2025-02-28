@@ -28,7 +28,7 @@ void Brigand::sePresente()
 	cout << "(" << nom << ") -- " << "Bonjour, je suis " << getNom() << " le " << getComportement() << " et j' aime le " << getBoissonFavorite() << "." << endl;
 }
 
-void Brigand::kidnappe(Dame &dame)
+void Brigand::kidnappe(Dame& dame)
 {
 	if (!estEnPrison())
 	{
