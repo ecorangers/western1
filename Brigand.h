@@ -21,8 +21,8 @@ public:
 	int getRecompense();
 	//Service
 	void sePresente();
-	void kidnappe(Dame & dame);
-	void seFaitEmprisonner(Cowboy &cowboy);
+	void kidnappe(Dame& dame);
+	void seFaitEmprisonner(Cowboy& cowboy);
 	void augmenteRecompense(const int prix = 100);
 	void diminueRecompense(const int prix = 100);
 	bool estEnPrison();
